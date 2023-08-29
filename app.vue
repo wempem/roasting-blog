@@ -10,7 +10,7 @@
             alt="My Happy SVG"
             viewbox="0 0 100 100"
           />
-          <p class="mt-2 lowercase font-medium">Roasting with Matt</p>
+          <p class="mt-2 lowercase font-medium">roastingreen</p>
         </div>
         <div class="flex m-2">
           <button
@@ -32,9 +32,9 @@
       </div>
     </div>
     <div class="flex flex-1 bg-gray-100 overflow-auto">
-      <div class="grid grid-cols-6 m-2">
+      <div class="grid grid-cols-6">
         <Matt class="m-2 col-start-2 col-span-1" />
-        <RoastList class="motion-reduce:-2 col-span-2" />
+        <RoastList class="col-span-2" />
         <Matt class="m-2 col-span-1" />
       </div>
     </div>

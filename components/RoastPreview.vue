@@ -1,8 +1,8 @@
 <template>
   <div class="max-w-sm max-h-sm w-full lg:max-w-full lg:flex">
     <div
-      class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-      style="background-image: url('/img/sampleroast.PNG')"
+      class="h-48 lg:h-auto lg:w-48 bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+      style="background-image: url('/img/bean.jpg')"
       title="some title about the roast"
     ></div>
     <div
@@ -12,7 +12,7 @@
         <p class="text-sm text-gray-600 items-center">Fast</p>
         <div class="text-gray-900 font-bold text-xl mb-2">5min Roast</div>
         <div class="max-w-sm inline-block min-w-0">
-          <p class="text-gray-700 text-base block">
+          <p class="text-gray-700 text-base line-clamp-3">
             Wow this one had some pretty fruity notes and a lot of great things
             going for it. Wow this one had some pretty fruity notes and a lot of
             great things going for it.
