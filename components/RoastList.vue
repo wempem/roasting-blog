@@ -1,13 +1,13 @@
+<script setup lang="ts">
+const counter = 5;
+</script>
+
 <template>
   <div>
     <RoastPreview
       v-for="index in counter"
       :key="index"
-      class="mb-3 first:mt-2"
+      class="pb-3 first:pt-2"
     />
   </div>
 </template>
-
-<script setup lang="ts">
-const counter = 5;
-</script>

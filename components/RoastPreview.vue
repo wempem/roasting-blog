@@ -1,18 +1,22 @@
+<script setup>
+function showMessage(msh) {
+  console.log(msh);
+}
+</script>
+
 <template>
-  <div class="max-w-sm max-h-sm w-full lg:max-w-full lg:flex">
+  <div
+    class="max-h z-10 w-full max-w-sm lg:flex lg:max-w-full"
+    @click="showMessage('Hello World')"
+  >
     <div
-      class="h-48 lg:h-auto lg:w-48 bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-      style="background-image: url('/img/bean.jpg')"
-      title="some title about the roast"
-    ></div>
-    <div
-      class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+      class="flex w-full cursor-pointer flex-col justify-between rounded-b border border-gray-400 bg-white p-4 leading-normal transition-all hover:-translate-y-1 hover:shadow-lg lg:rounded-b-none lg:rounded-r lg:border-gray-400"
     >
       <div class="mb-8">
-        <p class="text-sm text-gray-600 items-center">Fast</p>
-        <div class="text-gray-900 font-bold text-xl mb-2">5min Roast</div>
-        <div class="max-w-sm inline-block min-w-0">
-          <p class="text-gray-700 text-base line-clamp-3">
+        <p class="items-center text-sm text-gray-600 lg:text-lg">Fast</p>
+        <div class="mb-2 text-xl font-bold text-gray-900">5min Roast</div>
+        <div class="inline-block min-w-0 max-w-sm lg:max-w-full">
+          <p class="line-clamp-3 text-base text-gray-700">
             Wow this one had some pretty fruity notes and a lot of great things
             going for it. Wow this one had some pretty fruity notes and a lot of
             great things going for it.
@@ -21,12 +25,12 @@
       </div>
       <div class="flex items-center">
         <img
-          class="w-10 h-10 rounded-full mr-4"
+          class="mr-4 h-10 w-10 rounded-full"
           src="/favicon.ico"
           alt="Avatar of Jonathan Reinink"
         />
         <div class="text-sm">
-          <p class="text-gray-900 leading-none">Jonathan Reinink</p>
+          <p class="leading-none text-gray-900">Jonathan Reinink</p>
           <p class="text-gray-600">Aug 18</p>
         </div>
       </div>

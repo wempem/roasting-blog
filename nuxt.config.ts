@@ -12,4 +12,12 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  modules: [
+    ['@nuxtjs/google-fonts', {
+        families: {
+          // a name with spaces
+          'Martian+Mono': true,
+        }
+    }],
+  ],
 });
