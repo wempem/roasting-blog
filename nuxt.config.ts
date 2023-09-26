@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     ['@nuxtjs/google-fonts', {
         families: {
           // a name with spaces
-          'Martian+Mono': true,
+          Roboto: [100,400,700],
         }
     }],
   ],

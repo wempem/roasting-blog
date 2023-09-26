@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="font-sans">
+    <p>
       LOREM IPSUM FONT GENERATOR IMAGES PLUGINS GENERATORS ENGLISH Lorem Ipsum
       Generator Generate Lorem Ipsum placeholder text. Select the number of
       characters, words, sentences or paragraphs, and hit generate! GENERATED

@@ -32,7 +32,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      sans: ['Martian Mono']
+      sans: ['Roboto']
     }
   },
   plugins: [],

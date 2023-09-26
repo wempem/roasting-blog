@@ -40,7 +40,7 @@ function toggleMenu(event: Event) {
     >
       <div
         v-show="menuOpen"
-        class="z-50flex-row fixed inset-0 flex justify-center bg-white"
+        class="fixed inset-0 z-50 flex flex-row justify-center bg-white"
       >
         <div class="flex flex-col gap-4 pt-12">
           <button
@@ -62,9 +62,7 @@ function toggleMenu(event: Event) {
       </div>
     </Transition>
 
-    <div
-      class="from-1% fixed top-0 z-[40] flex h-10 w-full bg-gradient-to-r from-[#54a35ad0] via-[#1312129a] via-50% to-[#54a35ad0]"
-    >
+    <div class="from-1% fixed top-0 z-[70] flex h-10 w-full bg-white shadow-sm">
       <div class="flex w-[94%]">
         <div class="flex items-center">
           <img
@@ -74,19 +72,21 @@ function toggleMenu(event: Event) {
             alt="My Happy SVG"
             viewbox="0 0 100 100"
           />
-          <p class="font-medium lowercase">roastingreen</p>
+          <p class="font-medium lowercase">
+            roastin<span class="text-[#74a474]">green</span>
+          </p>
         </div>
         <!-- Regular buttons -->
-        <div v-if="!largeScreen" class="ml-auto flex items-center gap-4">
+        <div v-if="!largeScreen" class="ml-auto flex items-center gap-10">
           <button
             class="ml-auto flex text-xs lowercase text-slate-100 hover:text-slate-300"
           >
-            Posts
+            Home
           </button>
           <button
             class="flex text-xs lowercase text-slate-100 hover:text-slate-300"
           >
-            Roasts
+            Posts
           </button>
           <button
             class="flex text-xs lowercase text-slate-100 hover:text-slate-300"
@@ -129,15 +129,17 @@ function toggleMenu(event: Event) {
         </div>
       </div>
     </div>
-    <div class="flex flex-1 overflow-auto bg-gray-100 py-10">
-      <div class="grid grid-cols-6 gap-5">
-        <Matt class="col-span-1 col-start-2 m-2" />
-        <RoastList class="col-span-2" />
-        <Matt class="col-span-1 m-2" />
+    <div class="flex flex-1 overflow-auto bg-gray-100 p-3 py-10 md:py-12">
+      <div class="flex min-h-screen flex-1 md:grid md:grid-cols-6">
+        <Welcome class="col-span-4 col-start-2" />
+        <!-- <Matt class="col-span-1 m-2" />  -->
       </div>
     </div>
-    <div class="absolute bottom-0 h-10 w-full bg-gray-200" role="contentinfo">
-      Sticky footer
+    <div
+      class="absolute bottom-0 h-10 w-full bg-gray-200 pt-2 text-center text-sm"
+      role="contentinfo"
+    >
+      Copyright @ Matt Wempe
     </div>
   </div>
 </template>

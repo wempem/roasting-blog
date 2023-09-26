@@ -6,7 +6,7 @@ function showMessage(msh) {
 
 <template>
   <div
-    class="max-h z-10 w-full max-w-sm lg:flex lg:max-w-full"
+    class="max-h z-10 flex w-full max-w-full content-center text-left md:max-w-xs"
     @click="showMessage('Hello World')"
   >
     <div
