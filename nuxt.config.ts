@@ -13,11 +13,14 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    ['@nuxtjs/google-fonts', {
+    ['@nuxtjs/google-fonts', 
+    {
         families: {
           // a name with spaces
           Roboto: [100,400,700],
         }
-    }],
+    },
+    ],
+    ,"@nuxt/content"
   ],
 });
