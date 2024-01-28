@@ -1,7 +1,3 @@
-<template>
-  <ContentRendererMarkdown v-if="data" :value="data" />
-</template>
-
 <script setup lang="ts">
 const props = defineProps({
   markdownFile: {
@@ -14,6 +10,10 @@ const { data } = await useAsyncData(props.markdownFile, () =>
   queryContent(props.markdownFile).findOne()
 );
 </script>
+
+<template>
+  <ContentRendererMarkdown v-if="data" :value="data" />
+</template>
 
 <style>
 h1,

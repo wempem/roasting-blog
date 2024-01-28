@@ -1,7 +1,5 @@
 <template>
-  <div v-if="thing">
-    <Markdown :markdown-file="thing" />
-  </div>
+  <Markdown v-if="thing" :markdown-file="thing" />
 </template>
 
 <script setup lang="ts">
@@ -12,4 +10,3 @@ const thing: ComputedRef<string> = computed(() => {
     : route.params.slug;
 });
 </script>
-<style></style>
